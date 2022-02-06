@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    tools:context=".AddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview_editors_productinfo"
+                style="@style/style_editors_titletextview"
+                android:layout_marginTop="10dp"
+                android:text="@string/product_info" />
+
+            <ImageView
+                android:id="@+id/imageview_editors_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/product_info"
+                android:src="@drawable/nobooks" />
+
+            <Button
+                android:id="@+id/button_editors_pickfromgallery"
+                style="@style/style_editors_pickfromgallerybutton"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/pick_from_gallery" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ProductAddTextStyle"
+                android:text="@string/product_name" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/edittext_editors_name"
+                    style="@style/ProductAddFormStyle"
+                    android:hint="@string/product_name"
+                    android:inputType="textCapWords" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ProductAddTextStyle"
+                android:text="@string/product_price" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/edittext_editors_price"
+                    style="@style/ProductAddFormStyle"
+                    android:hint="@string/product_price"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/CurrencyStyle"
+                    android:text="@string/product_price_currency" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ProductAddTextStyle"
+                android:text="@string/product_quantity" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/edittext_editors_quantity"
+                    style="@style/ProductAddFormStyle"
+                    android:hint="@string/product_quantity"
+                    android:inputType="number" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ProductAddTextStyle"
+                android:text="@string/product_supplier_name" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/edittext_editors_suppliername"
+                    style="@style/ProductAddFormStyle"
+                    android:hint="@string/product_supplier_name"
+                    android:inputType="textPersonName" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ProductAddTextStyle"
+                android:text="@string/product_supplier_phone_number" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/edittext_editors_supplierphonenumber"
+                    style="@style/ProductAddFormStyle"
+                    android:hint="@string/product_supplier_phone_number"
+                    android:inputType="phone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ProductAddTextStyle"
+                android:text="@string/supplier_email" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/edittext_editors_supplieremail"
+                    style="@style/style_editors_edittext"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
